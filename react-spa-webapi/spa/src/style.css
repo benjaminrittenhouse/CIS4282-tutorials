@@ -1,0 +1,39 @@
+.nav {
+    padding-left: 1%;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.links {
+    margin-left: 2%;
+}
+
+body, html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.spaPage {
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.headerText {
+    font-size: 40px;
+}
+
+.tableBody {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.userBlock {
+    width: 20%;
+}
