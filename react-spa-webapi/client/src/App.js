@@ -9,6 +9,7 @@ import Display from './components/Display';
 
 function SPA(){
     // In this component, we are returning a div that includes our nav and the structure of our SPA (single page application)
+    const api = process.env.REACT_APP_API_URL + "/api/listAllUsers";
     return(
         // all returns must have a parent div that includes the rest of the JSX
         <div class="App">
@@ -21,7 +22,7 @@ function SPA(){
                 <div class = "links">
                     <Link class = "link" to="/">HOME</Link>
                     <Link class = "link" to="blog">BLOG</Link>
-                    <a target="blank" href="http://localhost:5000/api/listAllUsers">Web User API</a>
+                    <a target="blank" href= {api}>Web User API</a>
                 </div>
             </div>
             {/*
