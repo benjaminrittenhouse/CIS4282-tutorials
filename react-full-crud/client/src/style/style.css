@@ -1,0 +1,59 @@
+body, html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.spaPage {
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.headerText {
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 99%;
+    background-color: rgba(219, 219, 219, 0.616);
+}
+
+.view {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    text-align: center;
+}
+
+.heading {
+    margin-top: 7rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+
+
+#footer {
+    /* positioning */
+    text-align: center;
+    position: fixed;
+    bottom: 0rem;
+    left: 0rem;
+    z-index: 1;
+
+    /* color and sizing*/
+    padding: 0.5rem;
+    width: 100%;
+    background-color: rgb(183, 99, 3);
+    font-size: 1rem;
+
+    /* gives 3-D effect to footer */
+    box-shadow: 0rem 0rem 1rem black;
+}

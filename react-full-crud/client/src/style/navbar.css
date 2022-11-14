@@ -1,0 +1,54 @@
+.nav {
+    padding-left: 1%;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #E8E8E8;
+}
+
+.link {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.links {
+    margin-left: 2%;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    z-index: 1;
+    width: 100%;
+    white-space: nowrap;
+
+    padding: 0.75rem;
+    padding-top: 1rem;
+    box-shadow: 0rem 0rem 1rem black;
+    /* header 3-D effect*/
+    background-color: rgb(183, 99, 3);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#title {
+    font-size: 2rem;
+    text-align: center;
+
+    letter-spacing: 0.1rem;
+}
+
+#nav {
+    font-size: 1.3rem;
+    text-align: right;
+}
