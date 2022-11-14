@@ -21,8 +21,7 @@ function SPA(){
                 <div class = "links">
                     <Link class = "link" to="/">HOME</Link>
                     <Link class = "link" to="blog">BLOG</Link>
-                    <Link class = "link" to="users">USERS</Link>
-                    <Link class = "link" to="insert">INSERT</Link>
+                    <a target="blank" href="http://localhost:5000/api/listAllUsers">Web User API</a>
                 </div>
             </div>
             {/*
@@ -34,8 +33,6 @@ function SPA(){
             <Routes>
                 <Route path = "/" element = { <Home /> } />
                 <Route path = "blog" element = { <Blog /> } />
-                <Route path = "users" element = { <Display /> } />
-                <Route path = "insert" element = { <Insert /> } />
             </Routes>
         </div>
     );
