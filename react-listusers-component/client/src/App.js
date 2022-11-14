@@ -1,7 +1,6 @@
 import {Routes, Route, Link} from 'react-router-dom';
 import Home from './components/Home';
 import Blog from './components/Blog';
-import Insert from './components/Insert';
 import './style.css'
 
 import logo from "./img/logo192.png"
@@ -20,9 +19,10 @@ function SPA(){
                 */}
                 <img src = {logo} alt = "Logo" height = "50" width = "50"/>
                 <div class = "links">
-                    <Link class = "link" to="/">HOME</Link>
-                    <Link class = "link" to="blog">BLOG</Link>
-                    <a target="blank" href= {api}>Web User API</a>
+                    <Link class = "link" to="/"> "HOME" </Link>
+                    <Link class = "link" to="blog"> "BLOG" </Link>
+                    <Link class = "link" to="display"> "ListAllUsers Component" </Link>
+                    <a target="blank" href= {api}> "Web User API" </a>
                 </div>
             </div>
             {/*
@@ -34,6 +34,7 @@ function SPA(){
             <Routes>
                 <Route path = "/" element = { <Home /> } />
                 <Route path = "blog" element = { <Blog /> } />
+                <Route path = "display" element = { <Display /> } />
             </Routes>
         </div>
     );

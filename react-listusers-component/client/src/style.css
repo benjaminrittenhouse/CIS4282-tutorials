@@ -37,3 +37,8 @@ body, html {
 .userBlock {
     width: 20%;
 }
+
+.imageThumb {
+    width: 80%;
+    height: 80%;
+}
