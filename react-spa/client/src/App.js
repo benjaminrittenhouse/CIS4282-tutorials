@@ -1,11 +1,8 @@
 import {Routes, Route, Link} from 'react-router-dom';
 import Home from './components/Home';
 import Blog from './components/Blog';
-import Insert from './components/Insert';
 import './style.css'
-
 import logo from "./img/logo192.png"
-import Display from './components/Display';
 
 function SPA(){
     // In this component, we are returning a div that includes our nav and the structure of our SPA (single page application)
@@ -21,8 +18,6 @@ function SPA(){
                 <div class = "links">
                     <Link class = "link" to="/">HOME</Link>
                     <Link class = "link" to="blog">BLOG</Link>
-                    <Link class = "link" to="users">USERS</Link>
-                    <Link class = "link" to="insert">INSERT</Link>
                 </div>
             </div>
             {/*
@@ -34,8 +29,6 @@ function SPA(){
             <Routes>
                 <Route path = "/" element = { <Home /> } />
                 <Route path = "blog" element = { <Blog /> } />
-                <Route path = "users" element = { <Display /> } />
-                <Route path = "insert" element = { <Insert /> } />
             </Routes>
         </div>
     );
