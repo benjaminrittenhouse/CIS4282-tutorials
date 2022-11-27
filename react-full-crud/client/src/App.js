@@ -65,6 +65,7 @@ function SPA() {
                             <a target="blank" href={listAllUsers}>ListAllUsers</a>
                             <a target="blank" href={insertUser}>InsertUser</a>
                             <a target="blank" href={updateUser}>UpdateUser</a>
+                            {/* brad delete url tamper here, similar to above ^ */}
                         </div>
                     </div>
 
