@@ -48,6 +48,11 @@ function SPA() {
     // insert user tamper (with object above)
     const objToStrUpdate = new URLSearchParams(updateUserData).toString();
     const updateUser = `${process.env.REACT_APP_API_URL}/api/updateUser?${objToStrUpdate}`;
+
+    const [deleteUserID, setDeleteUserID] = useState(1064)
+    const deleteUser = `${process.env.REACT_APP_API_URL}/api/deleteUser/${deleteUserID}`;
+
+
     return (
         <div class="App">
             <div class="nav">
@@ -65,7 +70,7 @@ function SPA() {
                             <a target="blank" href={listAllUsers}>ListAllUsers</a>
                             <a target="blank" href={insertUser}>InsertUser</a>
                             <a target="blank" href={updateUser}>UpdateUser</a>
-                            {/* brad delete url tamper here, similar to above ^ */}
+                            <a target="blank" href={deleteUser}>DeleteUser</a>                            
                         </div>
                     </div>
 
