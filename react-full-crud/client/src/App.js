@@ -2,7 +2,6 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Blog from './components/Blog';
 import Insert from './components/webUser/Insert'
-import './style/display.css'
 import './style/navbar.css'
 
 
@@ -55,28 +54,26 @@ function SPA() {
 
     return (
         <div class="App">
-            <div class="nav">
-                <img src={logo} alt="Logo" height="50" width="50" />
-                <div class="links">
-                    <Link class="link" to="/">HOME</Link>
-                    <Link class="link" to="blog">BLOG</Link>
-                    <Link class="link" to="users">USERS</Link>
-                    <Link class="link" to="insert">INSERT</Link>
+                <div class="navbar">
+                    <img src={logo} alt="Logo" height="50" width="50" />
+                    <div class="links">
+                        <Link class="link" to="/">HOME</Link>
+                        <Link class="link" to="blog">BLOG</Link>
+                        <Link class="link" to="users">USERS</Link>
+                        <Link class="link" to="insert">INSERT</Link>
 
-                    {/* dropdown menu, per W3 schools */}
-                    <div class="dropdown">
-                        <button class="dropbtn">WebUserAPIs</button>
-                        <div class="dropdown-content">
-                            <a target="blank" href={listAllUsers}>ListAllUsers</a>
-                            <a target="blank" href={insertUser}>InsertUser</a>
-                            <a target="blank" href={updateUser}>UpdateUser</a>
-                            <a target="blank" href={deleteUser}>DeleteUser</a>                            
+                        {/* dropdown menu, per W3 schools */}
+                        <div class="dropdown">
+                            <button class="dropbtn">WebUserAPIs</button>
+                            <div class="dropdown-content">
+                                <a target="blank" href={listAllUsers}>ListAllUsers</a>
+                                <a target="blank" href={insertUser}>InsertUser</a>
+                                <a target="blank" href={updateUser}>UpdateUser</a>
+                                {/* brad delete url tamper here, similar to above ^ */}
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
-            </div>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="blog" element={<Blog />} />

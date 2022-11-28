@@ -34,26 +34,3 @@ body {
     margin-top: 7rem;
 }
 
-h2 {
-    margin-bottom: 2rem;
-}
-
-
-
-#footer {
-    /* positioning */
-    text-align: center;
-    position: fixed;
-    bottom: 0rem;
-    left: 0rem;
-    z-index: 1;
-
-    /* color and sizing*/
-    padding: 0.5rem;
-    width: 100%;
-    background-color: rgb(183, 99, 3);
-    font-size: 1rem;
-
-    /* gives 3-D effect to footer */
-    box-shadow: 0rem 0rem 1rem black;
-}

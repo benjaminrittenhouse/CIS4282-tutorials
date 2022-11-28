@@ -1,8 +1,8 @@
 
 import { Link } from "react-router-dom"
 import { useState, useEffect } from "react";
-import UpdateModal from "./webUser/updateModal"
-import "../style/update.css"
+import UpdateModal from "../webUser/updateModal"
+import "../../style/updateModal.css"
 
 //This is a React Component that will be used to display the information of a SINGLE user.
 //It will take in an propsect "props".

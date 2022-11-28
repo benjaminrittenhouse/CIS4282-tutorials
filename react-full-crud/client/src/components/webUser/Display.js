@@ -1,14 +1,13 @@
 import React, {useState, useEffect} from "react";
-import User from "../User.js";
+import User from "../webUser/User";
 import DeleteModal from "./DeleteModal";
 
 import "../../style/user/collapsed-user.css";
 import "../../style/user/expanded-user.css";
-import "../../style/display.css";
 import "../../style/navbar.css";
 import "../../style/style.css"
 import "../../style/user/user-table.css"
-import "../../style/update.css"
+import "../../style/updateModal.css"
 import "../../style/modalWindow.css"
 
 
