@@ -42,6 +42,18 @@ app.get("/api/listAllUsers", (req, res) => {
   }
 }); 
 
+//Router to GET specific user by ID
+app.get('/api/getUser/:id', (req, res) => {
+  const sqlGet = "SELECT web_user_id, user_email, user_password, image, membership_fee, birthday, web_user.user_role_id, role_type "
+  + "FROM web_user, user_role WHERE web_user_id=?";
+  db.query(sqlGet, [req.params.id], (req, result) => {
+      var user = []
+      // only 1 record (unique web id)
+      user.push(DbMods.formatWebUser(result[0]));
+      res.send(user);
+  })
+});
+
 app.listen(process.env.PORT || 5000, () => {
   console.log("Listening...");
 });
