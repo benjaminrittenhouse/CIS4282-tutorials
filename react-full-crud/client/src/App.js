@@ -47,6 +47,11 @@ function SPA() {
     // insert user tamper (with object above)
     const objToStrUpdate = new URLSearchParams(updateUserData).toString();
     const updateUser = `${process.env.REACT_APP_API_URL}/api/updateUser?${objToStrUpdate}`;
+
+    const [deleteUserID, setDeleteUserID] = useState(1064)
+    const deleteUser = `${process.env.REACT_APP_API_URL}/api/deleteUser/${deleteUserID}`;
+
+
     return (
         <div class="App">
                 <div class="navbar">

@@ -163,10 +163,17 @@ router.get("/deleteUser/:id", (req, res) => {
   db.query(sqlDelete, (err, result) => {
     if (err) throw err;
     console.log(result);
-    res.send({
-      resp: `User ${req.params.id} Deleted...`,
-      errorMsg: ""
-    });
+    if(result.affectedRows>0){
+      res.send({
+        resp: `User ${req.params.id} Deleted...`,
+        errorMsg: ""
+      });
+    }else{
+      res.send({
+        resp: ``,
+        errorMsg: `User with ID of ${req.params.id} does not exist in the database`
+      });
+    }
   })
 })
 
