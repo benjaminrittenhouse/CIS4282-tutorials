@@ -48,7 +48,7 @@ function SPA() {
     const objToStrUpdate = new URLSearchParams(updateUserData).toString();
     const updateUser = `${process.env.REACT_APP_API_URL}/api/updateUser?${objToStrUpdate}`;
 
-    const [deleteUserID, setDeleteUserID] = useState(1064)
+    const [deleteUserID, setDeleteUserID] = useState(1034)
     const deleteUser = `${process.env.REACT_APP_API_URL}/api/deleteUser/${deleteUserID}`;
 
 
@@ -66,10 +66,10 @@ function SPA() {
                         <div class="dropdown">
                             <button class="dropbtn">WebUserAPIs</button>
                             <div class="dropdown-content">
-                                <a target="blank" href={listAllUsers}>ListAllUsers</a>
-                                <a target="blank" href={insertUser}>InsertUser</a>
-                                <a target="blank" href={updateUser}>UpdateUser</a>
-                                {/* brad delete url tamper here, similar to above ^ */}
+                                <a target="blank" href={listAllUsers}>ListAllUsers API</a>
+                                <a target="blank" href={insertUser}>InsertUser API</a>
+                                <a target="blank" href={updateUser}>UpdateUser API</a>
+                                <a target="blank" href={deleteUser}>DeleteUser API</a>
                             </div>
                         </div>
                     </div>
