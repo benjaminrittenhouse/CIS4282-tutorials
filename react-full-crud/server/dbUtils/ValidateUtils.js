@@ -37,11 +37,9 @@ validateUtils.validateFloat = function (float, reqd) {
 
     float = float.replace('$', '');
     float = float.replace(',', '');
-    console.log("float after removal: " + float);
 
     var value = parseFloat(float);
 
-    console.log("Value of float = " + value);
 
     if (!isNaN(value)) {
         return "";

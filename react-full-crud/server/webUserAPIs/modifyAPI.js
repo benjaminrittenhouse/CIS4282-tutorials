@@ -47,7 +47,8 @@ router.get("/insertUser", (req, res) => {
       errorObj = tempObj;
       errors = true;
   } else {
-      webUser = tempObj;
+      // web user gets formatted, ready to insert into the database
+      webUser = DbMods.insertWebUser(tempObj);
   }
 
   if (!errors) {
@@ -63,6 +64,7 @@ router.get("/insertUser", (req, res) => {
           console.log("There was an error! Record not inserted!")
         } else {
           webUser.errorMsg = "Record inserted!"
+          console.log("Birthday: " + webUser.birthday);
           res.send(webUser);
           console.log("No errors! Record inserted!");
         }

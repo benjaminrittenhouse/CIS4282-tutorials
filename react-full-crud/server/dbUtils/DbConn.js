@@ -10,10 +10,10 @@ const db = mysql.createPool({
     database: process.env.DATABASE,
 });
 
-console.log("Host: " + process.env.HOST);
+/*console.log("Host: " + process.env.HOST);
 console.log("User: " + process.env.USER1);
 console.log("Password: " + process.env.PASSWORD);
-console.log("Database: " + process.env.DATABASE);
+console.log("Database: " + process.env.DATABASE);*/
 
 
 console.log("Database Connection");
