@@ -47,6 +47,7 @@ function Display(props) {
       //res.json parses the JSON response and returns a JS Object insead
       const data = await res.json();
 
+      console.log("DATA: ");
       console.log(data);
 
       //set our userList array with our JS Object

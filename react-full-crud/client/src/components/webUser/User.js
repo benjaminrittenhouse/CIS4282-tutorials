@@ -49,6 +49,7 @@ function User({ props }) {
 
             <div className={modalVisibility}>
               <UpdateModal props={userObj} />
+              <button type="button" className = "cancelButton" onClick={handleUpdate}>Cancel</button>
             </div>
 
             <div className="expanded-grid-container">

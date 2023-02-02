@@ -4,12 +4,13 @@ import { React, useEffect, useState } from 'react';
 //This is the function that is being rendered by ReactDOM
 var exportedRole = -1;
 function RoleTypes({ getUserRoleId, value }) {
-
     var [roles, setRoles] = useState([]);
 
     var [role, setRole] = useState("Select a Role");
     
     async function fetchRoleTypes() {
+        console.log("Value should be " + value);
+
         try {
             const str = `${process.env.REACT_APP_API_URL}/api/getRoleTypes`;
 
@@ -36,7 +37,6 @@ function RoleTypes({ getUserRoleId, value }) {
         fetchRoleTypes();
         exportedRole = role;
     }, []);
-
 
     const passingProps = (e) => {
         getUserRoleId(e.target.value);
